@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login | Fund Connect</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 25px 15px;
+  font-family: Arial, sans-serif;
+  background: #eaf8ef;
+  color: #26382d;
+}
+header {
+  text-align: center;
+  color: #16864a;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 20px;
+}
+.container {
+  background: white;
+  max-width: 430px;
+  margin: 25px auto;
+  padding: 30px 24px;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px #00000012;
+}
+h1 {
+  text-align: center;
+  color: #126b3b;
+}
+p {
+  text-align: center;
+  color: #777;
+  line-height: 1.5;
+}
+label {
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+}
+input {
+  width: 100%;
+  padding: 14px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  font-size: 16px;
+}
+button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 15px;
+  background: #16864a;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font-size: 17px;
+  font-weight: bold;
+}
+a {
+  color: #16864a;
+  text-decoration: none;
+  font-weight: bold;
+}
+.notice {
+  font-size: 12px;
+  margin-top: 20px;
+}
+</style>
+</head>
+<body>
+
+<header>FUND CONNECT</header>
+
+<div class="container">
+<h1>Welcome Back!</h1>
+
+<p>Login to your Fund Connect account.</p>
+
+<form id="loginForm">
+
+<label for="email">Email Address</label>
+<input id="email" type="email"
+placeholder="Enter your email" required>
+
+<label for="password">Password</label>
+<input id="password" type="password"
+placeholder="Enter your password" required>
+
+<button type="submit">Login</button>
+
+</form>
+
+<p>
+Don't have an account?
+<a href="signup.html">Sign Up</a>
+</p>
+
+<p class="notice">
+Demo page only. Secure account login
+will be connected later.
+</p>
+</div>
+
+<script>
+document.getElementById("loginForm")
+.addEventListener("submit", function(event) {
+  event.preventDefault();
+  alert("Login page is working! Secure login will be added later.");
+});
+</script>
+
+</body>
+</html>
