@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up | Fund Connect</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eaf8ef;
+  color: #26382d;
+  padding: 25px 15px;
+}
+header {
+  text-align: center;
+  padding: 15px;
+  color: #16864a;
+  font-size: 25px;
+  font-weight: bold;
+}
+.container {
+  background: white;
+  max-width: 430px;
+  margin: 25px auto;
+  padding: 30px 24px;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px #00000012;
+}
+h1 {
+  text-align: center;
+  color: #126b3b;
+}
+.subtitle {
+  text-align: center;
+  color: #777;
+  line-height: 1.5;
+}
+label {
+  display: block;
+  margin-top: 18px;
+  font-weight: bold;
+}
+input {
+  width: 100%;
+  padding: 13px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  font-size: 16px;
+}
+button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 15px;
+  background: #16864a;
+  border: none;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 7px;
+}
+.login {
+  text-align: center;
+  margin-top: 22px;
+}
+a {
+  color: #16864a;
+  text-decoration: none;
+  font-weight: bold;
+}
+.notice {
+  font-size: 12px;
+  color: #777;
+  text-align: center;
+  line-height: 1.5;
+  margin-top: 18px;
+}
+</style>
+</head>
+<body>
+
+<header>FUND CONNECT</header>
+
+<div class="container">
+<h1>Create Account</h1>
+
+<p class="subtitle">
+Join our worldwide community and make a difference.
+</p>
+
+<form id="signupForm">
+
+<label for="fullname">Full Name</label>
+<input id="fullname" type="text"
+placeholder="Enter your full name" required>
+
+<label for="email">Email Address</label>
+<input id="email" type="email"
+placeholder="Enter your email" required>
+
+<label for="password">Password</label>
+<input id="password" type="password"
+placeholder="Create a password"
+minlength="8" required>
+
+<label for="confirm">Confirm Password</label>
+<input id="confirm" type="password"
+placeholder="Enter password again"
+minlength="8" required>
+
+<button type="submit">Create Account</button>
+
+</form>
+
+<p class="login">
+Already have an account?
+<a href="login.html">Login</a>
+</p>
+
+<p class="notice">
+Your account registration system is under development.
+This demonstration page does not create or store accounts.
+</p>
+</div>
+
+<script>
+document.getElementById("signupForm")
+.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const password =
+    document.getElementById("password").value;
+
+  const confirm =
+    document.getElementById("confirm").value;
+
+  if (password !== confirm) {
+    alert("Passwords do not match!");
+    return;
+  }
+
+  alert("Registration page is working! Account creation will be added later.");
+});
+</script>
+
+</body>
+</html>
